@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root
+{
+    --Orange : hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --lightGrey : hsl(217, 12%, 63%);
+    --mediumGrey : hsl(216, 12%, 54%);
+    --darkBlue : hsl(213, 19%, 18%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body
+{
+    font-family: 'Overpass', sans-serif;
+    background-color: #ddd;
+}
+
+p
+{
+    font-size: 15px;
+}
+
+button, li
+{
+    cursor: pointer;
+}
+ul
+{
+    list-style: none;
+}
+li
+{
+    text-decoration: none;
+}
+
+.main-section
+{
+    width: 400px;
+    height: 393px;
+    background-color: var(--veryDarkBlue);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+
+}
+
+.container
+{
+  width: 90%;
+  height: 51vh;
+  margin: auto;  
+}
+
+/* Star work */
+.icon
+{
+    background-color: var(--darkBlue);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon i
+{
+    color: var(--Orange);
+}
+
+.text h1 {
+    color: var(--White);
+    margin-top: 30px;
+}
+.text p {
+    color: var(--mediumGrey);
+    margin-top: 10px;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 25px 0;
+}
+.list li
+{
+    color: var(--mediumGrey);
+}
+.list li:hover
+{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+.list li:focus
+{
+    background-color: var(--lightGrey);
+    color: var(--White);
+}
+.hidden
+{
+    display: none;
+}
+.btn
+{
+    padding: 10px 140px;
+    border: none;
+    color: var(--White);
+    text-transform: uppercase;
+    background-color: var(--Orange);
+    letter-spacing: 2px;
+    border-radius: 20px;
+}
+button.btn:hover
+{
+    background-color: var(--lightGrey);
+}
+.second-section
+{
+    display: none;
+    width: 400px;
+    height: 393px;
+    background-color: var(--veryDarkBlue);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    flex-direction: column;
+    text-align: center;
+}
+
+p.para 
+{
+    margin-top: 30px;
+    padding: 10px 0px;
+    background-color: var(--darkBlue);
+    border-radius: 40px;
+    color: var(--Orange);
+}
+/* End work */
