@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+:root
+{
+    --Blue: hsl(223, 87%, 63%);
+    --paleBlue: hsl(223, 100%, 88%);
+    --lightRed: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --DarkBlue: hsl(0, 0%, 78%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+
+body
+{
+    font-family: 'Libre Franklin', sans-serif;
+    background-color: #fff;
+}
+
+
+button
+{
+    cursor: pointer;
+}
+ul
+{
+    list-style: none;
+}
+li
+{
+    text-decoration: none;
+}
+
+.container 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .head
+{
+    padding-top: 20px;
+    font-size: 37px;
+    color: var(--Gray);
+}
+
+.container p.text
+{
+        padding-top: 7px;
+        font-size: 15px;
+        font-weight: 510;
+}
+
+span {
+    color: #000;
+    font-size: 34px;
+    font-weight: 700;
+}
+.container .login
+{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.login input
+{
+    padding: 8px 40px;
+    border-radius: 20px;
+    border : 1px solid var(--Gray);
+    outline: none;
+}
+
+span#text
+{
+    font-size:10px;
+    display: block;
+    margin-top: 6px;
+    margin-left: 20px;
+    color: var(--lightRed);
+    font-weight: 300;
+}
+
+#valid
+{
+    border : 1px solid green;
+}
+
+#invalid
+{
+    border : 1px solid var(--lightRed);
+}
+.Myinput::placeholder
+{
+    font-size: 15px;
+    color: var(--DarkBlue);
+}
+
+.login button
+{
+    padding: 12px 39px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: var(--Blue);
+    font-size: 15px;
+    border: none;
+    box-shadow: 3px 3px 5px  rgb(0, 0,0, 0.8);
+}
+
+.login button:hover
+{
+    background-color: rgb(23, 23, 194);
+}
+
+img.cover {
+    margin-top: 10px;
+    width: 600px;
+    height: 350px;
+}
+
+
+.icons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 20px;
+    color: var(--Blue);
+}
+
+p.copy
+{
+    font-size: 10px;
+    padding-top: 12px;
+}
+
+@media (max-width: 600px) {
+
+    img.cover{
+        width: 500px;
+        }
+}
+@media (max-width: 475px) {
+    .container
+    {
+        text-align: center;
+    }
+
+    .login button {
+        padding: 12px 128px;
+        margin-top: 12px;
+        }
+    img.cover{
+        width: 500px;
+        }
+    
+  }
+  
