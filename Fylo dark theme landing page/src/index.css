@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer{
+  .element-center
+  {
+    @apply flex justify-center items-center;
+  }
+}
+
+.btn
+{
+  background-color: #42b0d1;
+  transition: all 0.2s;
+}
+.btn:hover
+{
+  background-color: #8cdae4;
+}
+body{
+  font-family: 'robot', 'sans-serif';
+  background-color: hsl(218, 28%, 13%);
+}
